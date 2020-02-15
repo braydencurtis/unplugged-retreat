@@ -98,16 +98,22 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-.content-wrapper {
-  width: 90%;
-  margin: 50px 0;
+html {
+  font-size: 16px;
 }
 
-p {
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+ul,
+ol {
+
+}
+
+a {
+  text-decoration: none;
 }
 
 h1 {
@@ -116,12 +122,44 @@ h1 {
 
 h2 {
   font-size: 1.875em;
+  font-family: 'Poppins', sans-serif;
 }
 
+h3,
 h4 {
   font-style: normal;
   font-size: 1.125em;
+  font-family: 'Poppins', sans-serif;
 }
+
+p {
+  margin: 0;
+  line-height: 1.75em;
+
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address {
+
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+
+
+
+
+
 
 /* ---------- Base Header - Footer Styles ------------ */
 
@@ -168,13 +206,19 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   list-style: none;
+  padding: 0;
 }
 
 header nav a {
   color: #e2e3ed;
   text-decoration: none;
+}
+
+header h1 {
+  margin: 0;
 }
 
 footer {
@@ -206,7 +250,7 @@ footer ul {
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -588,6 +632,7 @@ aside .download {
   .hero-area h1{
     width: 550px;
     font-size: 3em;
+    margin: 0;
   }
   /* Aside */
   aside .content-wrapper {
