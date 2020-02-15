@@ -106,6 +106,8 @@ textarea {
 
 p {
   margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 h1 {
@@ -320,6 +322,7 @@ aside .download {
   margin: 30px 0;
 }
 .features .features-items {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -331,6 +334,7 @@ aside .download {
   width: 100%;
   display: flex;
   justify-content: center;
+  
 }
 .fontawesome-icon img{
   width: 40%;
@@ -339,7 +343,10 @@ aside .download {
 }
 .features p {
   margin: 0;
-  width: 200px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  /* width: 200px; */
 }
 
 /* Reviews */
@@ -600,7 +607,7 @@ aside .download {
   /* Features */
   .features article {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%;
@@ -608,6 +615,10 @@ aside .download {
 
   .features .features-item-description {
     width: 50%;
+  }
+
+  .features .fontawesome-icon {
+    width: 60%;
   }
 
   /* Reviews */
