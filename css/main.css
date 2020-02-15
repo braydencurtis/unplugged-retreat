@@ -299,7 +299,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url('../img/hero.jpg') center no-repeat;
+  background: url('../img/hero.jpg') center no-repeat #333;
   background-size: cover;
   color: #e2e3ed;
   height: 500px;
