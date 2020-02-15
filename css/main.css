@@ -108,8 +108,17 @@ p {
   margin: 0;
 }
 
-h2 {
+h1 {
   font-size: 2.25em;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+h4 {
+  font-style: normal;
+  font-size: 1.125em;
 }
 
 /* ---------- Base Header - Footer Styles ------------ */
@@ -168,6 +177,7 @@ header nav a {
 
 footer {
   flex-direction: column;
+  text-align: center;
 }
 
 footer a {
@@ -182,9 +192,14 @@ footer p {
 .footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
 }
 
 footer .social-icons {
@@ -197,6 +212,23 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  background: #527158;
+  border-radius: 50%;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+footer .social-icons a:hover {
+  background: #2a423a;
+  transition: all 0.5s;
 }
 
 footer .copyright {
@@ -219,6 +251,7 @@ footer .copyright {
   height: 500px;
 }
 
+
 /* Aside */
 
 aside {
@@ -228,6 +261,41 @@ aside {
   flex-flow: row wrap;
   background: #527158;
   color: #e2e3ed;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.form h3 {
+  text-align: left;
+}
+
+aside h3 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+aside .emailform {
+  width: 100%;
+  padding: 20px 16px;
+  font-style: italic;
+  color: #abacb2;
+  border: none;
+}
+
+aside .download {
+  width: 100%;
+  background: #2a423a;
+  padding: 22px;
+  color: #e2e3ed;
+  font-size: 1.125em;
+  margin-top: 20px;
+  border: none;
+  text-transform: uppercase;
+
 }
 
 /* Features */
@@ -251,16 +319,26 @@ aside {
   width: 63%;
   margin: 30px 0;
 }
-
 .features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  text-align: center;
 }
 
+.fontawesome-icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.fontawesome-icon img{
+  width: 40%;
+  margin-bottom: 40px;
+}
 .features p {
   margin: 0;
+  width: 200px;
 }
 
 /* Reviews */
@@ -274,7 +352,12 @@ aside {
 
 }
 
-.review h2 {
+.reviews img {
+  width: 100%;
+  height: auto;
+}
+
+.reviews h2 {
   margin-bottom: 40px;
 }
 
@@ -451,6 +534,21 @@ aside {
     margin: 100px 0;
   }
 
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+  h4{
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.875em;
+  }
+
   /* Header */
   header {
     justify-content: space-around;
@@ -478,8 +576,14 @@ aside {
   .hero-area {
     height: 600px;
   }
+
+  .hero-area h1{
+    width: 550px;
+    font-size: 3em;
+  }
   /* Aside */
   aside .content-wrapper {
+    width: 640px;
     margin: 50px;
     display: flex;
     justify-content: space-between;
@@ -506,18 +610,29 @@ aside {
   }
 
   /* Reviews */
+  .reviews .content-wrapper{
+    width: 640px;
+  }
   .reviews article {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
+  .reviews img {
+    width: 311px;
+    height: auto;
+  }
   .reviews article div {
     width: 49%;
+  }
+  .reviews h3 {
+    margin: 0;
   }
 
   /* Footer */
   footer .content-wrapper {
-    width: 65%;
+    width: 640px;
     margin: 100px 0;
   }
   .footer-content {
@@ -574,13 +689,54 @@ aside {
    .faq h2 {
      width: 100%;
    }
-
-
-
 }
 
 @media only screen and (min-width: 1200px) {
   /* Desktop Styles Here */
+  
+  /* General Styles */
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  p {
+    font-size: 1.125em;
+  }
+  /* Aside */
+  aside .content-wrapper {
+    width: 800px;
+  }
+
+  /* Features */
+  .features .content-wrapper{
+    max-width: 960px;
+  }
+  
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+  .reviews .content-wrapper {
+    width: 960px;
+  }
+
+  .reviews img {
+    width: 460px;
+    height: auto;
+  }
+  
+  /* Footer */
+  footer .content-wrapper {
+    width: 960px;
+  }
+
+  footer .footer-content {
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+
 }
 
 /* ==========================================================================
