@@ -268,6 +268,20 @@ footer .social-icons {
   align-items: center;
 }
 
+footer .facebook-icon img {
+  width: 10px;
+  height: 19px;
+}
+
+footer .twitter-icon img {
+  width: 19px;
+  height: 15px;
+}
+footer .insta-icon img {
+  width: 17px;
+  height: 17px;
+}
+
 footer .social-icons p {
   display: flex;
   justify-content: center;
