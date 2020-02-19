@@ -402,7 +402,7 @@ aside .download:active {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
   text-align: center;
 }
@@ -413,11 +413,16 @@ aside .download:active {
   justify-content: center;
   
 }
-.fontawesome-icon img{
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+/* .fontawesome-icon img{
   width: 40%;
   height: 40%;
   margin-bottom: 40px;
-}
+} */
 .features p {
   margin: 0;
   padding: 0;
