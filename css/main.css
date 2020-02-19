@@ -783,6 +783,10 @@ aside .download:active {
      width: 45%;
    }
 
+   .map figure {
+     padding-bottom: 45%;
+   }
+
    .contact-section .content-wrapper h2 {
      width: 80%;
    }
@@ -853,6 +857,10 @@ aside .download:active {
     align-items: flex-start;
   }
 
+  /* ABOUT PAGE Map */
+  .map figure {
+    padding-bottom: 37.5%;
+  }
 
 }
 
