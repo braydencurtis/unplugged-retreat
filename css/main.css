@@ -266,6 +266,7 @@ footer .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 footer .facebook-icon img {
@@ -767,6 +768,10 @@ aside .download:active {
     margin-bottom: 0;
   }
 
+  .footer .social-icons {
+    margin: 0;
+  }
+
   footer .copyright {
     width: 100%;
     
@@ -859,7 +864,7 @@ aside .download:active {
 
   footer .footer-content {
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
   }
 
   /* ABOUT PAGE Map */
