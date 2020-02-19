@@ -262,11 +262,15 @@ footer ul {
   padding: 0;
 }
 
+footer .social {
+  margin-top: 50px;
+}
+
 footer .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 footer .facebook-icon img {
@@ -761,15 +765,15 @@ aside .download:active {
   .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
   footer .contact {
     margin-bottom: 0;
   }
 
-  .footer .social-icons {
-    margin: 0;
+  footer .social {
+    margin-top: 0;
   }
 
   footer .copyright {
@@ -864,7 +868,7 @@ aside .download:active {
 
   footer .footer-content {
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
   }
 
   /* ABOUT PAGE Map */
